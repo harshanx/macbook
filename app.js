@@ -932,11 +932,11 @@ function initRetinaCanvasAnimation() {
         let h = rect.height;
         if (w === 0) w = 400;
         if (h === 0) h = 280;
-        canvas.width = w * dpr;
-        canvas.height = h * dpr;
+        canvas.width = Math.round(w * dpr);
+        canvas.height = Math.round(h * dpr);
+        ctx.setTransform(1, 0, 0, 1, 0, 0); // reset before re-scaling
         ctx.scale(dpr, dpr);
-        console.log('Canvas resized to:', w, 'x', h, 'DPR:', dpr);
-        
+
         // Re-render after resize
         if (firstFrameRendered) {
             renderFrame(useAutoPlay ? autoPlayFrame : Math.min(frameCount - 1, Math.floor(currentRetinaProgress * frameCount)));
@@ -944,6 +944,7 @@ function initRetinaCanvasAnimation() {
     }
     window.addEventListener('resize', resizeRetinaCanvas);
     resizeRetinaCanvas();
+    setTimeout(() => { resizeRetinaCanvas(); }, 400);
 
     // Smooth LERP easing state
     let currentRetinaProgress = 0;
