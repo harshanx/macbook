@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook M5 - Beyond Quantum</title>
+    <meta name="description" content="Showcasing the all-new MacBook M5. Precision-engineered anodized aluminum chassis, powered by the revolutionary M5 Chip. Experience realistic dynamic lighting and ultimate premium specs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-spaceblack">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-glow" id="customCursorGlow"></div>
+
+    <!-- Background Grid & Dynamic Glows -->
+    <div class="ambient-grid-overlay"></div>
+    <div class="ambient-glow bg-glow-1" id="ambientGlow1"></div>
+    <div class="ambient-glow bg-glow-2" id="ambientGlow2"></div>
+
+    <!-- Navigation Header -->
+    <header class="glass-nav" id="mainHeader">
+        <div class="nav-container">
+            <a href="#" class="logo-text" id="navLogo">MACBOOK M5</a>
+            <nav class="nav-links">
+                <a href="#heroScrollTrack" class="nav-link">Overview</a>
+                <a href="#bento-specs" class="nav-link">Breakthroughs</a>
+            </nav>
+            <div class="nav-actions">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scroll-Driven Animation Hero Container -->
+        <div class="hero-scroll-track" id="heroScrollTrack">
+            <section class="hero-sticky-container" id="hero">
+                <div class="hero-text-content" id="heroText">
+                    <span class="hero-pill-badge">M5 Silicon Era</span>
+                    <h1 class="hero-title">
+                        <span class="gradient-text-1">MacBook M5</span>
+                        <br>
+                        <span class="gradient-text-2">A mind-blowing powerhouse.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Anodized Space Black aluminum chassis. Powered by the groundbreaking M5 Pro and M5 Max chips. Experience industry-leading performance.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#bento-specs" class="btn btn-premium-glow" id="heroBuyBtn">
+                            <span>Explore Breakthroughs</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- High-Performance Canvas Container -->
+                <div class="hero-canvas-container" id="heroCanvasContainer">
+                    <div class="hero-image-glowing-backdrop"></div>
+                    <canvas id="heroCanvas"></canvas>
+                </div>
+
+                <!-- Left Bottom Scroll Feature Highlights -->
+                <div class="scroll-feature-highlight" id="scrollFeatureHighlight">
+                    <div class="feature-highlight-inner">
+                        <span class="feature-highlight-tag" id="featureTag">Chassis Structure</span>
+                        <h3 class="feature-highlight-title" id="featureTitle">Liquid Titanium</h3>
+                        <p class="feature-highlight-desc" id="featureDesc">Precision-engineered alloy. Impossibly thin at 9.8mm yet 40% stronger.</p>
+                        <div class="feature-highlight-progress-bar">
+                            <div class="feature-highlight-progress-fill" id="featureProgressFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bento Grid Breakthroughs -->
+        <section id="bento-specs" class="bento-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Architectural Marvel. Inside & Out.</h2>
+                    <p class="section-subtitle">A synthesis of extreme engineering, premium materials, and unparalleled power.</p>
+                </div>
+
+                <!-- ===== CHIP SHOWCASE (Full Width Cinematic) - Standalone ===== -->
+                <div class="chip-showcase-card glass-card" id="chipShowcaseCard">
+                    <div class="chip-showcase-inner-glow"></div>
+
+                    <!-- Ambient Pulse Rings -->
+                    <div class="chip-ring chip-ring-1"></div>
+                    <div class="chip-ring chip-ring-2"></div>
+                    <div class="chip-ring chip-ring-3"></div>
+
+                    <!-- Left: Text Column -->
+                    <div class="chip-text-column">
+                        <span class="bento-tag">Unprecedented Speed</span>
+                        <h2 class="chip-headline">M5 Max<br><span class="chip-headline-accent">Silicon.</span></h2>
+                        <p class="chip-desc">Built on industry-leading 3nm technology. Up to a 16‑core CPU, 40‑core GPU, and a 16‑core Neural Engine — all in one unified die.</p>
+
+                        <!-- Floating Spec Stats -->
+                        <div class="chip-stat-row">
+                            <div class="chip-stat">
+                                <span class="chip-stat-value">16</span>
+                                <span class="chip-stat-label">CPU Cores</span>
+                            </div>
+                            <div class="chip-stat">
+                                <span class="chip-stat-value">40</span>
+                                <span class="chip-stat-label">GPU Cores</span>
+                            </div>
+                            <div class="chip-stat">
+                                <span class="chip-stat-value">16</span>
+                                <span class="chip-stat-label">Neural Engine</span>
+                            </div>
+                            <div class="chip-stat">
+                                <span class="chip-stat-value">3nm</span>
+                                <span class="chip-stat-label">Lithography</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Canvas Animation -->
+                    <div class="chip-canvas-column">
+                        <canvas id="bentoChipCanvas" class="bento-chip-canvas"></canvas>
+                        <div class="chip-canvas-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Remaining Bento Cards Grid -->
+                <div class="bento-grid">
+                    <!-- Liquid Retina XDR — Scroll Canvas Animation -->
+                    <div class="bento-card bento-medium glass-card bento-retina-card" id="bentoDisplayCard">
+                        <div class="card-inner-glow"></div>
+                        <div class="bento-card-header">
+                            <span class="bento-tag">Ultimate Clarity</span>
+                            <h3>Liquid Retina XDR</h3>
+                        </div>
+                        <div class="bento-retina-media">
+                            <canvas id="bentoRetinaCanvas" class="bento-retina-canvas"></canvas>
+                            <div class="bento-retina-glow"></div>
+                        </div>
+                        <div class="bento-card-footer">
+                            <p>Extreme color fidelity, 1,000,000:1 contrast ratio, and ProMotion dynamic refresh up to 120Hz.</p>
+                        </div>
+                    </div>
+
+                    <!-- Acoustics (Small) -->
+                    <div class="bento-card bento-small glass-card" id="bentoAudioCard">
+                        <div class="card-inner-glow"></div>
+                        <div class="bento-card-header">
+                            <span class="bento-tag">Spatial Audio</span>
+                            <h3>Holographic Sound</h3>
+                        </div>
+                        <div class="bento-audio-visualizer">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="bento-card-footer">
+                            <p>A high-fidelity six-speaker acoustic system featuring force-cancelling woofers and absolute Dolby Atmos precision.</p>
+                        </div>
+                    </div>
+
+                    <!-- Battery Life (Small) -->
+                    <div class="bento-card bento-small glass-card" id="bentoBatteryCard">
+                        <div class="card-inner-glow"></div>
+                        <div class="bento-card-header">
+                            <span class="bento-tag">Unmatched Efficiency</span>
+                            <h3>All-Day Power</h3>
+                        </div>
+                        <div class="battery-meter-container">
+                            <div class="battery-outer">
+                                <div class="battery-fill" id="batteryFill"></div>
+                            </div>
+                            <div class="battery-percentage" id="batteryPercent">24 hrs</div>
+                        </div>
+                        <div class="bento-card-footer">
+                            <p>Up to 24 hours of battery life—the longest ever in a Mac, letting you sustain heavy workflows anywhere.</p>
+                        </div>
+                    </div>
+
+                </div><!-- /bento-grid -->
+            </div>
+        </section><!-- /bento-specs -->
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             PREMIUM ENCLOSURE — FULL-SCREEN STICKY SCROLL ANIMATION
+             Stays pinned while frames play, then page scrolls over it
+        ════════════════════════════════════════════════════════════════════ -->
+        <div class="thin-scroll-track" id="thinScrollTrack">
+            <div class="thin-sticky-container" id="thinStickyContainer">
+                <div class="thin-text-block">
+                    <span class="bento-tag">Premium Enclosure</span>
+                    <h2 class="thin-headline">Impossibly Sleek.<br><span class="thin-headline-accent">Built to Last.</span></h2>
+                    <p class="thin-desc">Precision-crafted from 100% recycled aluminum. A robust structural architecture with a gorgeous anodized seal that resists fingerprints.</p>
+                </div>
+                <div class="thin-canvas-wrap">
+                    <canvas id="bentoThinCanvas" class="bento-thin-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remaining Bento Cards -->
+        <section class="bento-section bento-section-lower">
+            <div class="container">
+                <div class="bento-grid">
+
+                    <!-- Advanced Connections -->
+                    <div class="bento-card bento-small glass-card" id="bentoPortsCard">
+                        <div class="card-inner-glow"></div>
+                        <div class="bento-card-header">
+                            <span class="bento-tag">High Bandwidth</span>
+                            <h3>Extreme Connectivity</h3>
+                        </div>
+                        <div class="ports-grid">
+                            <div class="port-item">
+                                <span class="port-badge">TB5</span>
+                                <span class="port-desc">120 Gbps</span>
+                            </div>
+                            <div class="port-item">
+                                <span class="port-badge">HDMI 2.1</span>
+                                <span class="port-desc">8K 120Hz</span>
+                            </div>
+                            <div class="port-item">
+                                <span class="port-badge">SD Express</span>
+                                <span class="port-desc">985 MB/s</span>
+                            </div>
+                            <div class="port-item">
+                                <span class="port-badge">MagSafe N</span>
+                                <span class="port-desc">140W Fast Charge</span>
+                            </div>
+                        </div>
+                        <div class="bento-card-footer">
+                            <p>Zero compromises on ports. Features dual Thunderbolt 5 channels for next-gen setups.</p>
+                        </div>
+                    </div>
+
+                    <!-- Apple Intelligence — Full Width Wide Card -->
+                    <div class="bento-card bento-ai-wide glass-card" id="bentoAiCard">
+                        <div class="card-inner-glow"></div>
+                        <div class="ai-orb ai-orb-1"></div>
+                        <div class="ai-orb ai-orb-2"></div>
+
+                        <div class="bento-ai-left">
+                            <div class="bento-card-header">
+                                <span class="bento-tag">Personal Intelligence</span>
+                                <h3 class="bento-ai-headline">Apple<br><span class="bento-ai-gradient">Intelligence.</span></h3>
+                            </div>
+                            <div class="bento-card-footer">
+                                <p class="bento-ai-desc">A personal intelligence system built right into macOS. Understands your context, keeps your data private — all powered by the M5 chip.</p>
+                            </div>
+                        </div>
+
+                        <div class="bento-ai-right">
+                            <!-- Writing Tools mini -->
+                            <div class="bento-ai-feature">
+                                <div class="bento-ai-feat-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <span class="bento-ai-feat-title">Writing Tools</span>
+                                    <p class="bento-ai-feat-desc">Rewrite, proofread, and summarize across every app.</p>
+                                </div>
+                            </div>
+                            <!-- Siri mini -->
+                            <div class="bento-ai-feature">
+                                <div class="bento-ai-feat-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3M8 22h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <span class="bento-ai-feat-title">Siri, smarter</span>
+                                    <p class="bento-ai-feat-desc">Hundreds of actions across apps with personal context.</p>
+                                </div>
+                            </div>
+                            <!-- Image Playground mini -->
+                            <div class="bento-ai-feature">
+                                <div class="bento-ai-feat-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <span class="bento-ai-feat-title">Image Playground</span>
+                                    <p class="bento-ai-feat-desc">Generate images instantly from your words and photos.</p>
+                                </div>
+                            </div>
+                            <!-- Smart Notifications -->
+                            <div class="bento-ai-feature">
+                                <div class="bento-ai-feat-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <span class="bento-ai-feat-title">Smart Notifications</span>
+                                    <p class="bento-ai-feat-desc">Priority Notifications surfaces only what truly needs your attention.</p>
+                                </div>
+                            </div>
+                            <!-- Private Cloud Compute -->
+                            <div class="bento-ai-feature">
+                                <div class="bento-ai-feat-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <span class="bento-ai-feat-title">Private by design</span>
+                                    <p class="bento-ai-feat-desc">On-device AI. Your data is never stored or shared with Apple servers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Animated writing demo visual -->
+                        <div class="bento-ai-visual">
+                            <div class="ai-writing-demo">
+                                <div class="ai-writing-line ai-writing-line-long"></div>
+                                <div class="ai-writing-line ai-writing-line-medium"></div>
+                                <div class="ai-writing-line ai-writing-line-short"></div>
+                                <div class="ai-writing-cursor"></div>
+                            </div>
+                            <div class="bento-ai-siri-wave">
+                                <div class="ai-siri-bar" style="--h:30%;--d:0s"></div>
+                                <div class="ai-siri-bar" style="--h:65%;--d:0.1s"></div>
+                                <div class="ai-siri-bar" style="--h:90%;--d:0.2s"></div>
+                                <div class="ai-siri-bar" style="--h:50%;--d:0.3s"></div>
+                                <div class="ai-siri-bar" style="--h:100%;--d:0.4s"></div>
+                                <div class="ai-siri-bar" style="--h:70%;--d:0.5s"></div>
+                                <div class="ai-siri-bar" style="--h:40%;--d:0.6s"></div>
+                                <div class="ai-siri-bar" style="--h:80%;--d:0.7s"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /bento-grid lower -->
+                <div class="bento-cta-row text-center" style="margin-top: 4rem;">
+                    <button class="btn btn-secondary-glass" id="openSpecsBtn">
+                        <span>View Technical Specifications Index</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section><!-- /bento-section-lower -->
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-credit">
+                Designed &amp; developed by
+                <a href="https://github.com/harshanx" target="_blank" rel="noopener noreferrer" class="footer-github-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                    hashanx
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Frosted Specs Side Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="specs-drawer" id="specsDrawer">
+        <div class="drawer-header">
+            <h3>Technical Specifications</h3>
+            <button class="drawer-close-btn" id="closeSpecsBtn">&times;</button>
+        </div>
+        <div class="drawer-content">
+            <div class="spec-table-group">
+                <h4>Processor &amp; Silicon</h4>
+                <table class="spec-table">
+                    <tr><td>SoC Layout</td><td>M5 / M5 Pro / M5 Max Silicon</td></tr>
+                    <tr><td>Lithography</td><td>3-nanometer custom architecture</td></tr>
+                    <tr><td>CPU Cores</td><td>Up to 16 cores (12 performance, 4 efficiency)</td></tr>
+                    <tr><td>GPU Cores</td><td>Up to 40 cores with hardware-accelerated ray tracing</td></tr>
+                    <tr><td>Neural Engine</td><td>16 cores, 38 Trillion operations/sec</td></tr>
+                </table>
+            </div>
+            <div class="spec-table-group">
+                <h4>Liquid Display</h4>
+                <table class="spec-table">
+                    <tr><td>Technology</td><td>Liquid Retina XDR Display</td></tr>
+                    <tr><td>Brightness</td><td>1600 nits peak HDR, 1000 nits sustained</td></tr>
+                    <tr><td>Contrast</td><td>1,000,000:1 dynamic range</td></tr>
+                    <tr><td>Refresh Rate</td><td>120Hz ProMotion adaptive technology</td></tr>
+                    <tr><td>Resolution</td><td>3456 x 2234 native</td></tr>
+                </table>
+            </div>
+            <div class="spec-table-group">
+                <h4>Enclosure &amp; Weight</h4>
+                <table class="spec-table">
+                    <tr><td>Chassis Alloy</td><td>100% Recycled Aluminum Enclosure</td></tr>
+                    <tr><td>Thickness</td><td>1.55 cm (0.61 inches)</td></tr>
+                    <tr><td>Weight Profile</td><td>3.4 lbs (1.55 kg) or 4.7 lbs (2.14 kg)</td></tr>
+                    <tr><td>Thermal Core</td><td>Advanced active thermal loop architecture</td></tr>
+                </table>
+            </div>
+            <div class="spec-table-group">
+                <h4>Acoustics &amp; Secure</h4>
+                <table class="spec-table">
+                    <tr><td>Audio Drivers</td><td>6 high-fidelity spatial speakers</td></tr>
+                    <tr><td>Sub-Woofers</td><td>Dual force-cancelling channels</td></tr>
+                    <tr><td>Microphones</td><td>Studio 3-mic beamforming audio matrix</td></tr>
+                    <tr><td>Biometrics</td><td>Holographic Secure Touch-ID sensor</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
